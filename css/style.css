@@ -87,6 +87,10 @@
     display: none;
 
 }
+	.btnMore:hover .secondaryNav {
+				display: block;
+			
+		}
 .btnMore .secondaryNav > a {
     width: 170px;
     background-color: black;
@@ -103,7 +107,7 @@
     color: black;
 }
 
-.btnMore:hover .secondaryNav {
+.btnMore:active .secondaryNav {
     display: block;
 }
 .searchBtn ,.mobile-menubar{

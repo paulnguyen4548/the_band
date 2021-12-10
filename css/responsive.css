@@ -5,8 +5,16 @@
 	mobile
 	
 */
-	@media screen and (max-width: 739px){
-		.show{display: block !important;}
+
+	
+
+	@media screen and (max-width: 739px){ 
+		.mobile-menubar:active	{
+		
+			background-color: red;
+		}
+		
+		.showmobileMenu{display: block !important;}
 		#navigation{
 			display: block;
 		}
@@ -19,26 +27,28 @@
 			display: none;
 			background-color: black;
 		}
-	
+		
 		.searchBtn{
 			display: none;
 		}
 		.mobile-menubar{
 			display: block;
 		}
+		.btnMore .secondaryNav {
+			position: absolute;    
+			display: block;
+
+		}
 		.btnMore .secondaryNav > a {
 			color: white;
 			background-color: black;
 			list-style: none;
 			padding: 0 35px;
-			width: 739px;
-			
+			width: 739px;			
 		}
 		
-		.btnMore:active .secondaryNav {
-				display: block;
-			
-		}
+		
+	
 		.theband-member{
 			display: block;
 		
@@ -65,6 +75,24 @@
 			width: 100%; 
 			background-color: white;
 			
+		}
+		.contact {
+			display: block;
+			
+		}
+		.contact-info {
+			width:fit-content;
+			margin:auto;
+		}
+		.name, .email {
+			width: 100%;
+		}
+		.inputform_name_email {
+			padding-top: 16px;
+			display: block;	
+		}
+		.submit {
+			width: 100%;
 		}
 		.footer-img{
 			padding:0 24px;

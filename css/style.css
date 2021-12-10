@@ -139,7 +139,7 @@
 }
 .banner .bannerContent{
     position: absolute;
-    bottom: 32px;
+    bottom: -24px;
    line-height: 46px;
     margin-bottom: 32px;
     color: white;

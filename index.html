@@ -127,14 +127,14 @@
                     </div>
                     <div class="contact-inputform">
                         <div class="inputform_name_email">
-                            <input class="name padding8" type="text" placeholder="Name" required  >
-                            <input class="email padding8" type="text" placeholder="Email" required  >
+                            <input id="name_input" class="name padding8" type="text" placeholder="Name" required  >
+                            <input id="mail_input" class="email padding8" type="text" placeholder="Email" required  >
                         </div>
                         <div >
-                            <input class="messeage padding8" type="text" placeholder="Message" required  >
+                            <input id="message_input" class="messeage padding8" type="text" placeholder="Message" required  >
                         </div>
                         <div > 
-                            <input class="submit padding8" type="submit" value="Send">   
+                            <input class="submit padding8" type="submit" value="Send" onclick= resetInput()>   
                         </div>
                     </div>
                 </div>
@@ -182,7 +182,14 @@
                 }
             }
         
-
+		function resetInput(){
+				document.getElementById("name_input").value = "";		
+				document.getElementById("mail_input").value = "";	
+				document.getElementById("message_input").value = "";	
+				alert("Successful booking !")
+				
+			}
+			
 
     </script>
 </body>

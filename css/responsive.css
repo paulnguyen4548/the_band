@@ -1,0 +1,78 @@
+/* 
+	tablet & mobile
+*/
+/* 
+	mobile
+	
+*/
+	@media screen and (max-width: 739px){
+		.show{display: block !important;}
+		#navigation{
+			display: block;
+		}
+		#navigation > a {
+			width: fit-content;
+		}
+		
+		
+		#link-item{
+			display: none;
+			background-color: black;
+		}
+	
+		.searchBtn{
+			display: none;
+		}
+		.mobile-menubar{
+			display: block;
+		}
+		.btnMore .secondaryNav > a {
+			color: white;
+			background-color: black;
+			list-style: none;
+			padding: 0 35px;
+			width: 739px;
+			
+		}
+		
+		.btnMore:active .secondaryNav {
+				display: block;
+			
+		}
+		.theband-member{
+			display: block;
+		
+		}
+		.conntentTitle {
+			padding: 64px 24px;
+			color: black;
+		}
+		.member-img{
+			margin: 32px auto;
+			width: 250px !important;
+			height: 300px !important;
+		}
+		.Tourdates-place{
+			display: block;
+			margin-top: 0;
+		}
+		.place{			
+			padding-bottom: 10px;
+			margin-top: 32px;
+		}
+		.place ,.place-img {
+			display: block;
+			width: 100%; 
+			background-color: white;
+			
+		}
+		.footer-img{
+			padding:0 24px;
+		}
+		
+	
+		
+
+
+
+	}

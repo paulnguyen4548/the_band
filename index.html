@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <title>The Band</title>
+</head>
+<body>
+    <div id="header">
+        <div id="navigation">
+            <a class="menu style-tag-a" href="#"> Home </a>     
+            <div id="link-item" class="item-list" >
+                <a class="menu style-tag-a" href="#contentTheband" onclick="showmobileMenu ()"> Band </a>
+                <a class="menu style-tag-a" href="#contentTourdates" onclick="showmobileMenu ()"> Tour </a>    
+                <a class="menu style-tag-a" href="#contentContact" onclick="showmobileMenu ()"> Contact </a>
+                <div class="menu btnMore">
+                    <a class="style-tag-a" href="#" >More
+                        <i class="fas fa-chevron-down"></i>
+                    </a>                     
+                    <div class="secondaryNav">
+                        <a class="style-tag-a" href="#"> Merchandise </a>
+                        <a class="style-tag-a" href="#"> Extras </a>
+                        <a class="style-tag-a" href="#"> Media </a>
+                    </div>   
+            
+                 </div>
+            </div>
+            
+           
+
+
+            <div class="searchBtn">
+                <i class="fas fa-search"></i>
+            </div>
+			<div class="mobile-menubar" onclick="showmobileMenu ()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <div class="banner">
+            <img class="bannerImg" src="./image/la.jpg" alt="bn">
+            <div class="bannerContent alignCenter">
+                <h3>Los Angerles</h3>
+                <p>We had the best time playing at Venice Beach!</p>
+            </div>
+        </div>
+    </div>
+    <div id="body">
+        <div id="contentTheband" class="conntentTitle">
+            <div class="theband-titile ">
+                    <h2 class="alignCenter titileNav" >The band</h2>
+                    <p class="alignCenter titileDescription" >We love music</p>
+                <div class="theband-content">
+                        <p> We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                </div>
+                <div class="theband-member">
+                        <div class="theband-member-info">
+                            <p>Name1</p>
+                            <img class="member-img" src="./image/bandmember.jpg" alt="member">      
+                        </div>
+                        <div class="theband-member-info">
+                            <p>Name2</p>
+                            <img class="member-img" src="./image/bandmember.jpg" alt="member" >      
+                        </div>
+                        <div class="theband-member-info">
+                            <p>Name3</p>
+                            <img class="member-img" src="./image/bandmember.jpg" alt="member" >      
+                        </div>
+                </div>
+            </div>
+            
+        </div>
+        <div id="contentTourdates" class="conntentTitle">
+            <div class="Tourdates-titile alignCenter">
+                <h2 class="alignCenter titileNav">TOUR DATES</h2>
+                <p class="alignCenter titileDescription">Remember to book your tickets!</p>
+                <ul class="Tourdates-booking">
+                    <li>September <span>Sold out</span> </li>
+                    <li>October <span>Sold out</span> </li>
+                    <li>November <div class="qty">3</div> </li>
+                </ul>
+                <div class="Tourdates-place">
+                    <div class="place">
+                        <img class="place-img" src="./image/newyork.jpg" alt="newyork">
+                        <div class="place-name padding16">newyork</div>
+                        <div class="place-date-show padding16">Fri 27 Nov 2016</div>
+                        <div class="place-info padding16">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
+                        <div class="place-btnticket">Buy Ticket</div>
+                    </div>
+                    <div class="place">
+                        <img class="place-img" src="./image/paris.jpg" alt="newyork">
+                        <div class="place-name padding16">Paris</div>
+                        <div class="place-date-show padding16">Sat 28 Nov 2016</div>
+                        <div class="place-info padding16">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
+                        <div class="place-btnticket">Buy Ticket</div>
+                    </div>
+                    <div class="place">
+                        <img class="place-img" src="./image/sanfran.jpg" alt="newyork">
+                        <div class="place-name padding16">San Francisco</div>
+                        <div class="place-date-show padding16">Sun 29 Nov 2016</div>
+                        <div class="place-info padding16">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
+                        <div class="place-btnticket">Buy Ticket</div>
+                    </div>
+                </div>
+			</div>
+
+        </div>
+        <div id="contentContact" class="conntentTitle">
+            <div class="Contact-titile">
+                <h2 class="alignCenter titileNav">CONTACT</h2>
+                <p class="alignCenter titileDescription">Fan? Drop a note!</p>
+            
+                <div class="contact">
+                    <div class="contact-info">
+                        <div> <i class="contact_icon fas fa-map-marker-alt"> </i>Thuận An, Bình Dương </div>
+                        <div> <i class="contact_icon fas fa-phone-square"> </i>Phone: 
+							<a class="style-tag-a contact-info-input" href="tel:0949172203"> 0949172203 </a>
+						</div>
+						<div> <i class="contact_icon fas fa-envelope"> </i>Email: 
+							<a class="style-tag-a contact-info-input" href="mailto:quocuy4548@gmail.com"> quocuy4548@gmail.com </a>
+						</div>
+                        
+                    </div>
+                    <div class="contact-inputform">
+                        <div class="inputform_name_email">
+                            <input class="name padding8" type="text" placeholder="Name" required  >
+                            <input class="email padding8" type="text" placeholder="Email" required  >
+                        </div>
+                        <div >
+                            <input class="messeage padding8" type="text" placeholder="Message" required  >
+                        </div>
+                        <div > 
+                            <input class="submit padding8" type="submit" value="Send">   
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+
+        </div>
+    </div>
+    <div id="footer" class="footer-img">        
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d291.15201368496656!2d106.69161438420286!3d10.943801208307388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d73da2f0d637%3A0xd09e77e1220faee1!2zMjQgTmjDoCB0aOG7nSBCw7puZywgSMawbmcgxJDhu4tuaCwgVGh14bqtbiBBbiwgQsOsbmggRMawxqFuZywgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1639102202810!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+        <div class="footer-socical">
+            <a href="www.facebook.com"><i class="fab fa-facebook-square"></i></a>
+            <a href="www.twitter.com"><i class="fab fa-twitter"></i></a>
+            <a href="www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+            <a href="www.instagram.com"><i class="fab fa-instagram-square"></i></a>
+            <a href="www.youtube.com"><i class="fab fa-youtube"></i></a>
+
+        </div>
+    </div>
+
+
+
+    <script>
+        
+        /*Ham them class 'show' vao id link-item de hien thi menu con*/
+        function showmobileMenu(){
+            document.getElementById("link-item").classList.toggle("show");
+        }
+        /* Ham khi click ra ngoai thi dong menu con */
+        window.onclick = function(event){
+            if(!event.target.matches('.mobile-menubar')){
+                var dropdown = document.getElementsByClassName("item-list");
+                var i;
+                for(i = 0; i < dropdown.length; i++) {
+                    var openDropdown = dropdown[i];
+                    if (openDropdown.classList.contains('show')){
+                        openDropdown.classList.remove('show');
+                    }
+
+                    }
+                }
+            }
+        
+
+
+    </script>
+</body>

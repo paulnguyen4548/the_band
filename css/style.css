@@ -1,0 +1,330 @@
+
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin: 0;
+}
+
+/*common
+*/
+.alignCenter{
+    text-align: center;
+    width: 100%;
+    line-height: 40px;
+    padding-bottom: 30px;
+
+}
+
+.titileNav{
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-size: 30px;
+    letter-spacing: 4px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.titileDescription{
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    opacity: 0.6    ;
+}
+
+.conntentTitle{
+    padding: 64px 16px;
+    color: black;
+
+}
+
+.padding16{
+    
+    padding: 15px 16px 0 15px;
+}
+.padding8{
+
+    padding: 8px 16px;
+}
+.style-tag-a{
+    text-decoration: none;
+    color: unset;
+    padding: 0 24px;
+    color: black;
+    text-transform: uppercase;
+    display: block; 
+}
+/*common
+*/
+
+
+#navigation  {
+    position: fixed;
+	width:100%;
+    z-index: 1;
+    height: 46.5px;
+    background-color: black;
+    display: inline-flex;
+	
+}
+#link-item{
+    display: inherit;
+}
+
+.menu{  
+    line-height: 46.5px;
+    height: 46.5px;
+    list-style: none;
+    color: white;
+}
+
+
+.menu:hover {
+    background-color: #767575	;
+    color: white;
+}
+.btnMore > a{
+    color: white;
+}
+.btnMore .secondaryNav {
+    position: absolute;    
+    display: none;
+
+}
+.btnMore .secondaryNav > a {
+    width: 170px;
+    background-color: black;
+    list-style: none;
+    padding: 0 10px;
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+
+.btnMore .secondaryNav > a:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+.btnMore:hover .secondaryNav {
+    display: block;
+}
+.searchBtn ,.mobile-menubar{
+    width: 67px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    text-align: center;
+    padding: 9px;
+
+    height: 46.5px;
+    line-height: 31.5px;
+}
+.mobile-menubar{
+	display:none;
+}
+.searchBtn:hover,
+.mobile-menubar:hover{
+    background-color: red;
+}
+.banner{
+    position: relative;
+}
+.banner .bannerImg{
+    
+    width: 100%;
+    height: 50%;
+}
+.banner .bannerContent{
+    position: absolute;
+    bottom: 32px;
+   line-height: 46px;
+    margin-bottom: 32px;
+    color: white;
+    text-shadow: 1px 2px black;
+   
+}
+
+
+.theband-titile , .Tourdates-titile , .Contact-titile{
+    margin: auto;
+    max-width: 740px;
+    text-align: justify;
+}
+
+
+
+
+.theband-member{
+    display: flex;
+    margin-top: 32px;
+    justify-content: space-around;
+}
+.theband-member-info{
+    text-align: center;
+
+}
+.theband-member-info > p {
+    padding: 16px 0;
+    margin: 15px 0;
+}
+
+.theband-member-info .member-img {
+    display: block;
+    width: 153.583px;
+    height: 153.583px;
+    border-radius: 10px;
+
+
+
+}
+#contentTourdates {
+    background-color: black;
+}
+.Tourdates-titile{
+    color: white;
+}
+.Tourdates-booking{ 
+    background-color: white;
+    list-style: none;
+    
+}
+.Tourdates-booking > li{
+   
+    padding: 10px 16px;
+    color: #757575;
+    border-bottom: solid 1px #ddd;
+}
+.Tourdates-booking > li > span {
+    
+    background-color: #f44336;
+    color: white;
+    padding: 0 8px;
+    margin-left: 16px;
+}
+.Tourdates-booking > li > .qty{
+    float: right;
+    background-color: black;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    margin-right: 16px;
+    color:white;
+} 
+.Tourdates-place{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 32px;
+}
+.place{
+    display: inline-block;
+    width: 32%;
+    background-color: white;
+}
+.place-img{
+    display: inline-block;
+    width: 100%;
+}
+.place-img:hover{
+    opacity: 0.6;
+}
+.place-name, .place-date-show,.place-info{
+    font-family: "Lato", sans-serif;
+    text-align: justify;
+    color:black;
+}
+.place-btnticket{
+    width: fit-content;
+    padding: 8px 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 16px;
+    background-color: black;
+    color: white;   
+	font-family: "Lato", sans-serif;
+
+}
+.place-btnticket:hover{
+    background-color: #ccc;
+    color: black;
+}
+
+.place-date-show{
+    opacity: 0.6;
+}
+
+
+.contact{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.contact-info{
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    line-height: 1.5;
+	width:45%;
+}
+.contact-info-input{
+	display: inline;
+	padding: 0 0 0 10px;
+	text-transform: unset;
+}
+.contact_icon{
+	padding-right: 8px;
+}
+
+.inputform_name_email{
+	display:flex;
+	justify-content: space-between;
+}
+.messeage{
+    width: 100%;
+
+}
+.name, .email{
+	width: 49%;
+}
+
+.name, .email,.messeage{
+    margin-bottom: 8px;
+    
+}
+.submit{
+	float: right;
+    background-color: black;
+    border-radius: 0%;
+    color:white;
+    border: none;
+    padding: 11px 21px;
+}
+.submit:hover{
+    background-color: #ccc;
+    color: black;
+}
+
+.footer-img{
+    margin: auto;
+    max-width: 740px;
+    text-align: justify;
+}
+.footer-img > iframe{
+	width: 100%;
+}
+
+.footer-socical {
+	padding: 64px 0;
+    width:	100%;
+    text-align: center;
+    font-size: 22px;
+}
+.footer-socical a{
+    text-decoration: none;
+    padding:16px;
+    color: black;
+}
+.footer-socical a:hover{
+    background-color: #ccc;
+    color: black;
+}

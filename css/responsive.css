@@ -37,7 +37,6 @@
 		.btnMore .secondaryNav {
 			position: absolute;    
 			display: block;
-
 		}
 		.btnMore .secondaryNav > a {
 			color: white;
@@ -48,7 +47,9 @@
 		}
 		
 		
-	
+		.banner .bannerContent{			
+			bottom: -60px;
+		}
 		.theband-member{
 			display: block;
 		

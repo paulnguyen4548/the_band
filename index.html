@@ -18,12 +18,13 @@
                 <a class="menu style-tag-a" href="#contentTourdates" onclick="showmobileMenu ()"> Tour </a>    
                 <a class="menu style-tag-a" href="#contentContact" onclick="showmobileMenu ()"> Contact </a>
                 <div class="menu btnMore">
-                    <a class="style-tag-a" href="#" >More
+                    <a class="style-tag-a" href="#"">More
                         <i class="fas fa-chevron-down"></i>
+						
                     </a>                     
-                    <div class="secondaryNav">
+                    <div id="sub-link-item" class="item-list secondaryNav">
                         <a class="style-tag-a" href="#"> Merchandise </a>
-                        <a class="style-tag-a" href="#"> Extras </a>
+                        <a class="style-tag-a" href="#" > Extras </a>
                         <a class="style-tag-a" href="#"> Media </a>
                     </div>   
             
@@ -162,8 +163,10 @@
         
         /*Ham them class 'show' vao id link-item de hien thi menu con*/
         function showmobileMenu(){
-            document.getElementById("link-item").classList.toggle("show");
+            document.getElementById("link-item").classList.toggle("showmobileMenu");
         }
+		
+		
         /* Ham khi click ra ngoai thi dong menu con */
         window.onclick = function(event){
             if(!event.target.matches('.mobile-menubar')){
@@ -171,8 +174,8 @@
                 var i;
                 for(i = 0; i < dropdown.length; i++) {
                     var openDropdown = dropdown[i];
-                    if (openDropdown.classList.contains('show')){
-                        openDropdown.classList.remove('show');
+                    if (openDropdown.classList.contains('showmobileMenu')){
+                        openDropdown.classList.remove('showmobileMenu');
                     }
 
                     }

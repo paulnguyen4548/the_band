@@ -41,13 +41,35 @@
                 <i class="fas fa-bars"></i>
             </div>
         </div>
-        <div class="banner">
+        <div class="banner fade">
             <img class="bannerImg" src="./image/la.jpg" alt="bn">
             <div class="bannerContent alignCenter">
                 <h3>Los Angerles</h3>
                 <p>We had the best time playing at Venice Beach!</p>
             </div>
+			
         </div>
+		<div class="banner fade">
+            <img class="bannerImg" src="./image/chicago.jpg" alt="bn">
+            <div class="bannerContent alignCenter">
+                <h3>Chicago</h3>
+                <p>Thank you, Chicago - A night we won't forget.</p>
+            </div>
+			
+        </div>
+		<div class="banner fade">
+            <img class="bannerImg" src="./image/ny.jpg" alt="bn">
+            <div class="bannerContent alignCenter">
+                <h3>New York</h3>
+                <p>The atmosphere in New York is lorem ipsum.</p>
+            </div>
+			
+        </div>
+		<div class="index" style="text-align:center">
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+		</div>
     </div>
     <div id="body">
         <div id="contentTheband" class="conntentTitle">
@@ -145,8 +167,7 @@
         </div>
     </div>
     <div id="footer" class="footer-img">        
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d291.15201368496656!2d106.69161438420286!3d10.943801208307388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d73da2f0d637%3A0xd09e77e1220faee1!2zMjQgTmjDoCB0aOG7nSBCw7puZywgSMawbmcgxJDhu4tuaCwgVGh14bqtbiBBbiwgQsOsbmggRMawxqFuZywgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1639102202810!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125357.32525373591!2d106.63181669008438!3d10.931884033277166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d79ff9eafb9f%3A0x2d324a0dd89d1200!2sThu%E1%BA%ADn%20An%2C%20Binh%20Duong%2C%20Vietnam!5e0!3m2!1sen!2s!4v1639552520026!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         <div class="footer-socical">
             <a href="www.facebook.com"><i class="fab fa-facebook-square"></i></a>
             <a href="www.twitter.com"><i class="fab fa-twitter"></i></a>
@@ -189,7 +210,26 @@
 				alert("Successful booking !")
 				
 			}
-			
+		var slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+		  var i;
+		  var slides = document.getElementsByClassName("banner");
+		  var dots = document.getElementsByClassName("dot");
+		  for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";  
+		  }	
+		  slideIndex++;
+		  if (slideIndex > slides.length) {slideIndex = 1}    
+		  for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " active";
+		  setTimeout(showSlides, 2000); // Change image every 2 seconds
+		}
+
 
     </script>
 </body>
